@@ -1,7 +1,7 @@
-import CalculatorApp from "@/app/components";
+
 
 const App = () => {
-    return <CalculatorApp />;
+    return;
 }
 
 export default App;
