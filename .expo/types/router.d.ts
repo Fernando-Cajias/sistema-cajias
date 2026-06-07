@@ -1,0 +1,14 @@
+/* eslint-disable */
+import * as Router from 'expo-router';
+
+export * from 'expo-router';
+
+declare module 'expo-router' {
+  export namespace ExpoRouter {
+    export interface __routes<T extends string | object = string> {
+      hrefInputParams: { pathname: Router.RelativePathString, params?: Router.UnknownInputParams } | { pathname: Router.ExternalPathString, params?: Router.UnknownInputParams } | { pathname: `/rootLayoutNav`; params?: Router.UnknownInputParams; } | { pathname: `/../hooks/loginHook/useLogin`; params?: Router.UnknownInputParams; } | { pathname: `/_sitemap`; params?: Router.UnknownInputParams; } | { pathname: `${'/(auth)'}` | `/`; params?: Router.UnknownInputParams; } | { pathname: `${'/(business)'}` | `/`; params?: Router.UnknownInputParams; } | { pathname: `${'/(student)'}` | `/`; params?: Router.UnknownInputParams; } | { pathname: `${'/(teacher)'}` | `/`; params?: Router.UnknownInputParams; };
+      hrefOutputParams: { pathname: Router.RelativePathString, params?: Router.UnknownOutputParams } | { pathname: Router.ExternalPathString, params?: Router.UnknownOutputParams } | { pathname: `/rootLayoutNav`; params?: Router.UnknownOutputParams; } | { pathname: `/../hooks/loginHook/useLogin`; params?: Router.UnknownOutputParams; } | { pathname: `/_sitemap`; params?: Router.UnknownOutputParams; } | { pathname: `${'/(auth)'}` | `/`; params?: Router.UnknownOutputParams; } | { pathname: `${'/(business)'}` | `/`; params?: Router.UnknownOutputParams; } | { pathname: `${'/(student)'}` | `/`; params?: Router.UnknownOutputParams; } | { pathname: `${'/(teacher)'}` | `/`; params?: Router.UnknownOutputParams; };
+      href: Router.RelativePathString | Router.ExternalPathString | `/rootLayoutNav${`?${string}` | `#${string}` | ''}` | `/../hooks/loginHook/useLogin${`?${string}` | `#${string}` | ''}` | `/_sitemap${`?${string}` | `#${string}` | ''}` | `${'/(auth)'}${`?${string}` | `#${string}` | ''}` | `/${`?${string}` | `#${string}` | ''}` | `${'/(business)'}${`?${string}` | `#${string}` | ''}` | `/${`?${string}` | `#${string}` | ''}` | `${'/(student)'}${`?${string}` | `#${string}` | ''}` | `/${`?${string}` | `#${string}` | ''}` | `${'/(teacher)'}${`?${string}` | `#${string}` | ''}` | `/${`?${string}` | `#${string}` | ''}` | { pathname: Router.RelativePathString, params?: Router.UnknownInputParams } | { pathname: Router.ExternalPathString, params?: Router.UnknownInputParams } | { pathname: `/rootLayoutNav`; params?: Router.UnknownInputParams; } | { pathname: `/../hooks/loginHook/useLogin`; params?: Router.UnknownInputParams; } | { pathname: `/_sitemap`; params?: Router.UnknownInputParams; } | { pathname: `${'/(auth)'}` | `/`; params?: Router.UnknownInputParams; } | { pathname: `${'/(business)'}` | `/`; params?: Router.UnknownInputParams; } | { pathname: `${'/(student)'}` | `/`; params?: Router.UnknownInputParams; } | { pathname: `${'/(teacher)'}` | `/`; params?: Router.UnknownInputParams; };
+    }
+  }
+}
